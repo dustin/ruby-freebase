@@ -10,7 +10,5 @@ end
 
 install File.join( 'config', 'freebase.yml' )
 
-puts IO.read(File.join(File.dirname(__FILE__), '..', 'README'))
-
-puts "\n\nIf you haven't yet done so, please install the freebase gem:\n\t[sudo] gem install freebase"
+puts "If you haven't yet done so, please install the freebase gem:\n[sudo] gem install freebase"
 
