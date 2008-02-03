@@ -1,5 +1,5 @@
 development:
-  host: freebase.com
+  host: sandbox.freebase.com
   debug: true
   trace: false
 test:
