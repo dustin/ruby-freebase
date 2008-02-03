@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 # (c) Copyright 2007 Chris Eppstein. All Rights Reserved. 
 # Usage:
 #  ruby albums.rb "The Police"
@@ -15,6 +16,16 @@ module Freebase::Mixins::Music
   end
 end
 
+def usage
+%Q{Usage:
+    ruby albums.rb artist_name_in_english
+}
+end
+
+unless ARGV[0]
+  puts usage
+  exit 1
+end
 
 artist = Freebase::Types::Music::Artist.find(:first,
   :conditions => {
